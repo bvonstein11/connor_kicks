@@ -193,8 +193,11 @@ html,body{background:#050D1A;font-family:'Barlow',system-ui,sans-serif}
 .contact a.btn{display:inline-block;margin-top:14px;border:1px solid var(--gold);color:var(--gold);
   text-decoration:none;padding:12px 30px;font-family:'Oswald',sans-serif;font-weight:600;
   font-size:13px;letter-spacing:.14em}
-.contact .f{color:var(--muted);font-size:13px;margin-top:18px;line-height:1.9}
-.contact .f a{color:var(--sky);text-decoration:none;border-bottom:1px solid rgba(127,178,229,.3)}
+.contact .links{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-top:14px}
+.contact .links a.btn{margin:0 14px 0 0}
+.contact .ico{width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--fg-dim);transition:color .15s}
+.contact .ico:hover,.contact .ico:focus-visible{color:var(--gold)}
+.contact .ico svg{width:24px;height:24px;display:block}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 .modal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;
@@ -399,12 +402,20 @@ html,body{background:#050D1A;font-family:'Barlow',system-ui,sans-serif}
 
     <div class="contact">
       <div class="h">GET IN TOUCH</div>
-      <a class="btn" href="mailto:connorvonstein@gmail.com">EMAIL</a>
-      <div class="f">
-        <a href="https://x.com/connor_vonstein">X @connor_vonstein</a><br>
-        <a href="https://youtube.com/@ConnorKicks2031">YouTube @ConnorKicks2031</a><br>
-        <a href="https://instagram.com/connor.kicks12">Instagram @connor.kicks12</a>
-      </div>    </div>
+      <div class="links">
+        <a class="btn" href="mailto:connorvonstein@gmail.com">EMAIL</a>
+        <a class="ico" href="https://x.com/connor_vonstein" target="_blank" rel="noopener" aria-label="X @connor_vonstein"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="ico" href="https://instagram.com/connor.kicks12" target="_blank" rel="noopener" aria-label="Instagram @connor.kicks12"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/>
+            </svg></a>
+        <a class="ico" href="https://youtube.com/@ConnorKicks2031" target="_blank" rel="noopener" aria-label="YouTube @ConnorKicks2031"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M10.2 9.1v5.8l5-2.9z" fill="currentColor"/>
+            </svg></a>
+      </div>
+    </div>
 
   </div>
 </div>
